@@ -18,6 +18,12 @@ fetch('components/navbar.html')
             }
     })
 
+fetch('components/promotion.html')
+    .then(result => result.text())
+    .then(text => {
+        document.querySelector("div#promotion").innerHTML = text;
+    })
+
 fetch('components/footer.html')
     .then(result => result.text())
     .then(text => {
