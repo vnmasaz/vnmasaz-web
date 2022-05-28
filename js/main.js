@@ -157,7 +157,7 @@ jQuery(document).ready(function($) {
 	siteMagnificPopup();
 
 
-	var siteCarousel = function () {
+	var siteCarousel = setTimeout(function () {
 		if ( $('.owl-carousel-2').length > 0 ) {
 			$('.owl-carousel-2').owlCarousel({
 		    center: false,
@@ -202,8 +202,8 @@ jQuery(document).ready(function($) {
 	    nav: true,
 	    navText: ['<span class="icon-keyboard_arrow_left">', '<span class="icon-keyboard_arrow_right">']
 	  });
-	};
-	siteCarousel();
+	}, 100);
+	// siteCarousel();
 
 	var siteStellar = function() {
 		$(window).stellar({

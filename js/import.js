@@ -16,16 +16,24 @@ fetch('components/navbar.html')
             }
     })
 
+fetch('components/footer.html')
+    .then(result => result.text())
+    .then(text => {
+        let element = document.querySelector("footer#footer");
+        element.className = "site-footer";
+        element.innerHTML = text;
+    })
+
 fetch('components/promotion.html')
     .then(result => result.text())
     .then(text => {
         document.querySelector("div#promotion").innerHTML = text;
     })
 
-fetch('components/footer.html')
+fetch('components/testimonials.html')
     .then(result => result.text())
     .then(text => {
-        let element = document.querySelector("footer#footer");
-        element.className = "site-footer";
+        let element = document.querySelector("div#testimonials");
+        element.className = "site-section";
         element.innerHTML = text;
     })
