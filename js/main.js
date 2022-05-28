@@ -256,7 +256,7 @@ jQuery(document).ready(function($) {
 	siteRangeSlider();
 
 
-	var counter = function() {
+	var counter = setTimeout(function() {
 		
 		$('.section-counter').waypoint( function( direction ) {
 
@@ -279,8 +279,8 @@ jQuery(document).ready(function($) {
 
 		} , { offset: '95%' } );
 
-	}
-	counter();
+	}, 100);
+	// counter();
 
 	
 

@@ -37,3 +37,9 @@ fetch('components/testimonials.html')
         element.className = "site-section";
         element.innerHTML = text;
     })
+
+fetch('components/metrics.html')
+    .then(result => result.text())
+    .then(text => {
+        document.querySelector("div#metrics").innerHTML = text;
+    })
