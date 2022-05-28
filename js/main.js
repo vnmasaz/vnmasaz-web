@@ -10,7 +10,7 @@ jQuery(document).ready(function($) {
 
 	
 
-	var siteMenuClone = function() {
+	var siteMenuClone = setTimeout(function() {
 
 		$('.js-clone-nav').each(function() {
 			var $this = $(this);
@@ -86,8 +86,8 @@ jQuery(document).ready(function($) {
 				}
 	    }
 		});
-	}; 
-	siteMenuClone();
+	}, 100);
+	// siteMenuClone();
 
 
 	var sitePlusMinus = function() {
