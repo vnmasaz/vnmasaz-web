@@ -16,6 +16,12 @@ fetch('components/navbar.html')
             }
     })
 
+fetch('components/quick-info.html')
+    .then(result => result.text())
+    .then(text => {
+        document.querySelector("div#quick-info").innerHTML = text;
+    })
+
 fetch('components/footer.html')
     .then(result => result.text())
     .then(text => {
