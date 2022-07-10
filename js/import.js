@@ -16,6 +16,12 @@ fetch('components/navbar.html')
             }
     })
 
+fetch('components/header.html')
+    .then(result => result.text())
+    .then(text => {
+        document.querySelector("div#header").innerHTML = text;
+    })
+
 fetch('components/quick-info.html')
     .then(result => result.text())
     .then(text => {

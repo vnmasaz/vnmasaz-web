@@ -67,7 +67,7 @@ input:focus {
   background: #f1f1f1;
 }
 .fgc1 {
-  color: #999;
+  color: rgb(0 0 0 / 60%);
 }
 .fgc0 {
   color: #000;
