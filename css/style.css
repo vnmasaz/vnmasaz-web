@@ -1,3 +1,10 @@
+/* Custom */
+.inactive-link {
+  pointer-events: none;
+  cursor: default;
+}
+
+
 /* Base */
 body {
   line-height: 1.7;
