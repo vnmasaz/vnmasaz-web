@@ -2682,6 +2682,7 @@ h1, h2, h3, h4, h5,
   transition: .3s all ease;
   position: relative;
   display: inline-block;
+  margin-bottom: 4px;
 }
 
 .block-services-1 .block-service-1-more .icon {
